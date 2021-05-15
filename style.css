@@ -55,14 +55,11 @@ button:hover {
 /*header*/
 
 .header {
-  height: 50px;
+  height: 640px;
   background-color: var(--background);
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -80,12 +77,20 @@ button:hover {
   height: 40px;
 }
 
+.header__menu {
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-top: -100px;
+  margin-left: 30px;
+}
+
 .header__menu ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 30px;
   font-size: 1.6rem;
+  text-align: left;
 }
 
 .header__menu a {
@@ -102,13 +107,17 @@ button:hover {
 .header__buttons {
   display: flex;
   flex-direction: row;
+  align-self: flex-end;
+  justify-content: space-between;
   gap: 20px;
+  width: 100%;
 }
 
 .button__login {
   background-color: var(--background);
   color: var(--white);
   font-family: 'Open Sans', sans-serif;
+  width: 50%;
 }
 
 /* .button__login::before {
@@ -120,6 +129,10 @@ button:hover {
 
 .button__login:hover {
   background-color: var(--black);
+}
+
+.button__download {
+  width: 50%;
 }
 
 /*main*/
