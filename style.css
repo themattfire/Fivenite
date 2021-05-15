@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Open+Sans:wght@600&display=swap');
+
+:root {
+  --primarycolor: #ffff01;
+  --secondarycolor: #4dccfa;
+  --black: #000;
+  --white: #fff;
+  --background: #2a2a2a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Bowlby One SC', cursive;
+  height: 100vh;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--black);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  color: var(--secondarycolor);
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: none;
+  background-color: var(--primarycolor);
+  color: var(--black);
+  font-family: 'Bowlby One SC', cursive;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--white);
+}
+
+/*header*/
+
+.header {
+  height: 50px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo__epic {
+  height: 40px;
+}
+
+.logo__fivenite {
+  height: 40px;
+}
+
+.header__menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 1.6rem;
+}
+
+.header__menu a {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.header__menu a:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.button__login {
+  background-color: var(--background);
+  color: var(--white);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* .button__login::before {
+  content: url(./images/user-regular.svg);
+  transform: scale(0.1);
+  width: 10px;
+  height: 5px;
+} */
+
+.button__login:hover {
+  background-color: var(--black);
+}
+
+/*main*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__header {
+  content: url(./images/main-image.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.main__area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+  top: -25px;
+  width: 90%;
+}
+
+.area__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.area__card img {
+  margin-bottom: 20px;
+}
+.area__card h1 {
+  margin-bottom: 10px;
+}
+
+.button__more-info {
+  display: none;
+}
+
+.main__footer {
+  content: url(./images/footer-image.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(--background);
+  padding: 20px;
+}
+
+.footer__logo {
+  width: 80px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer__nav ul {
+  list-style: none;
+  text-align: left;
+}
+
+.footer__nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.footer__nav a:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 5.5rem;
+    line-height: 6.4rem;
+  }
+
+  .footer__nav {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .main__area {
+    top: -150px;
+  }
+
+  .header__menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 1.6rem;
+  }
+
+  .header__menu a {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .header__menu a:hover {
+    border-bottom: 1px solid var(--white);
+  }
+
+  .header__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .button__login {
+    background-color: var(--background);
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /* .button__login::before {
+  content: url(./images/user-regular.svg);
+  transform: scale(0.1);
+  width: 10px;
+  height: 5px;
+} */
+
+  .button__login:hover {
+    background-color: var(--black);
+  }
+
+  .button__more-info {
+    display: block;
+    position: relative;
+  }
+}
