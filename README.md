@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Fivenite](https://your-live-site-url.com)
+- Live Site URL: [Fivenite](https://themattfire.github.io/fivenite/)
 
 ## My process
 
@@ -56,7 +56,7 @@ Users should be able to:
 
 ### What I learned
 
-I put my knowledge on practice my knowledge on javascript, even thought it's still basic, I am feeling proud about my first dropdown responsive menu.
+I put on practice my knowledge on javascript, even thought it's still basic, I am feeling proud about my first dropdown responsive menu.
 
 **HTML**
 
