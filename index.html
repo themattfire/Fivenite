@@ -7,36 +7,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fornite</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
   <header class="header">
-    <div class="header__logo">
-      <figure class="logo__epic">
-        <img src="./images/logo-epic-game.png" alt="Epic games logo">
-      </figure>
-      <figure class="logo__fivenite">
-        <img src="./images/logo-fortnite.png" alt="Fivenite logo">
-      </figure>
+    <figure class="header__logos">
+      <img alt="Epic Logo" src="./images/logo-epic-game.png">
+      <img alt="Fivenite Logo" src="./images/logo-fortnite.png">
+    </figure>
+
+    <figure class="header__icons">
+      <img class="icons__search" alt="Search" src="./images/search.svg">
+      <img class="icons__globe" alt="Globe" src="./images/globe.svg">
+    </figure>
+
+    <div class="header__menu">
+      <input class="menu__input" id="btn-menu" type="checkbox" />
+      <label class="menu__label" for="btn-menu">
+        <span class="label__icon"></span>
+      </label>
     </div>
-    <nav class="header__menu">
+
+    <nav class="header__nav">
       <ul>
         <li><a href="#">Pase de batalla</a></li>
-        <li> <a href="#">Modo creativo</a></li>
+        <li><a href="#">Modo creativo</a></li>
         <li><a href="#">Salvar el mundo</a></li>
         <li><a href="#">Competitivo</a></li>
         <li><a href="#">Noticias</a></li>
         <li><a href="#">Ayuda</a></li>
       </ul>
     </nav>
-    <div class="header__icons"></div>
+
     <div class="header__buttons">
-      <button class="button__login">Iniciar sesión</button>
-      <button class="button__download">Descargar</button>
+      <button class="btn btn--login">
+        <span>Iniciar Sesión</span>
+      </button>
+      <button class="btn btn--download">Descargar</button>
     </div>
   </header>
-
 
   <main class="main">
 
@@ -77,7 +90,6 @@
 
     </div>
 
-
     <div class="main__footer">
       <button class="button__more-info">Más información</button>
     </div>
@@ -109,6 +121,7 @@
     </div>
   </footer>
 
+  <script src="index.js"></script>
 </body>
 
 </html>
